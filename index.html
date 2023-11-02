@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>E-Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .col-md-6 {
+            margin-top: 20px;
+        }
+        
+        #second-card {
+            margin-top: 20px;
+        }
+
+        #image-relay {
+            margin-top: 20px;
+        }
+
+        #carouselId {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            border-radius: 15px;
+        }
+
+        #footer-space {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary">
+    <header class="bg-light">
+        <ul class="nav nav-tabs" id="navId" role="tablist">
+            <li class="nav-item">
+                <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Quick Access</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">Latest Entry</a>
+                    <a class="dropdown-item" href="#tab3Id">Popular Books</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#tab4Id">About Us</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 fs-4" id="hero-section">
+                    <div class="p-5 mb-4 bg-light rounded-3">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-5 fw-bold">Discover the world with books</h1>
+                            <p class="col-md-8">Books are written or printed works that provide a wealth of
+                                information,
+                                entertainment, and insight. They are a form of recorded knowledge and storytelling, with
+                                the power
+                                to transport readers to different worlds, impart knowledge, and evoke a wide range of
+                                emotions.</p>
+                            <button class="btn btn-primary btn-lg" type="button">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" id="card-section">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Featured Books</h5>
+                            <p class="card-text">Dive into our latest added books</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Book Recommendations</h5>
+                            <p class="card-text">This Month popular books base on our monthly rankings</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Author Spotlight</h5>
+                            <p class="card-text">Get to know your popular author from different perspective</p>
+                        </div>
+                    </div>
+                    <div class="card" id="second-card">
+                        <img src="asset/nature.webp" class="card-img-top" alt="Card Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Join Us</h5>
+                            <p class="card-text">Join our largest book reading community</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="image-relay">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="First slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="asset/first-img.jpg" class="w-100 d-block" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/second-img.jpg" class="w-100 d-block" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/third-img.avif" class="w-100 d-block" alt="Third slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="bg-dark text-light py-3" id="footer-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2077 E-Library</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
